@@ -1,0 +1,89 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>测试自适应页面居中-单手投篮css3</title>  
+    <script type="text/javascript" src="http://static.to8to.com/gb_js/jquery-1.10.2.min.js"></script>  
+    <style type="text/css">  
+	*{ padding:0 ; margin:0;}
+	.shooting_box{ display:-webkit-box;-webkit-box-align:center; -webkit-box-pack:center;width:100%; height:100%; position:relative;
+				   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(42,164,206,1)), color-stop(100%,rgba(250,104,75,1)));
+				   background: -webkit-linear-gradient(top, rgba(42,164,206,1) 10%,rgba(250,104,75,1) 100%);
+				   background: linear-gradient(to bottom, rgba(42,164,206,1) 10%,rgba(250,104,75,1) 100%);}
+	.shooting{background:url("http://health110.github.io/images/toulan.png") no-repeat; width:160px; height:290px;animation: runs 1200ms linear infinite;
+			 -webkit-animation: runs 1200ms linear infinite;
+			 -moz-animation: runs 1200ms linear infinite;
+			 -o-animation: runs 1200ms linear infinite;
+			 -webkit-animation-timing-function: step-start;/* 马上跳到动画每一结束桢的状态 */
+			 -moz-animation-timing-function: step-start;
+			 -o-animation-timing-function: step-start;
+	 }
+	@keyframes runs{
+			0%   {background-position: -44px 0;}
+			20%   {background-position: -220px 0;}
+			40%   {background-position: -390px 0;}
+			60%   {background-position: -560px 0;}
+			80%   {background-position: -730px 0;}
+			100% {background-position: -44px 0;}
+	}
+	
+	@-webkit-keyframes runs{
+			0%   {background-position: -44px 0;}
+			20%   {background-position: -220px 0;}
+			40%   {background-position: -390px 0;}
+			60%   {background-position: -560px 0;}
+			80%   {background-position: -730px 0;}
+			100% {background-position: -44px 0;}
+	}
+	@-moz-keyframes runs{
+			0%   {background-position: -44px 0;}
+			20%   {background-position: -220px 0;}
+			40%   {background-position: -390px 0;}
+			60%   {background-position: -560px 0;}
+			80%   {background-position: -730px 0;}
+			100% {background-position: -44px 0;}
+	}
+	@-o-keyframes runs{
+			0%   {background-position: -44px 0;}
+			20%   {background-position: -220px 0;}
+			40%   {background-position: -390px 0;}
+			60%   {background-position: -560px 0;}
+			80%   {background-position: -730px 0;}
+			100% {background-position: -44px 0;}
+	}
+	
+ .bottom_arrow{ position:absolute; width: 100%; text-align:center; left:0; bottom:0px; z-index: 11;}
+ .bottom_arrow img{ width:40px;}
+ @-webkit-keyframes bottomArrow {
+  0% {
+    transform:translate(0,-5px);
+	-webkit-transform: translate(0,-5px);		 
+  }
+   50% {
+ 
+   	transform:translate(0,10px) ;
+	-webkit-transform: translate(0,10px);
+	opacity:0.4;
+   }
+   100% {
+    transform:translate(0,-5px);
+	-webkit-transform: translate(0,-5px);		 
+   }
+}
+.ArrowAni{-webkit-animation:bottomArrow 1s linear infinite; animation:bottomArrow 1s linear infinite;}
+
+    </style>  
+    </head>  
+      
+    <body>  
+        
+    <div class="shooting_box">
+        <div class="shooting"></div>
+        <div class="bottom_arrow" ><img src="http://img.to8to.com/wap/weixin/arrow2.png" class="ArrowAni"></div>
+    </div>
+    
+    </body>  
+    </html>  
