@@ -20,8 +20,8 @@ html,body{
 
 
 
- .bottomArrow{ position:absolute; width: 100%; text-align:center; bottom:0px; z-index: 11; /* margin-left: 42%; */}
- .bottomArrow img{ width:40px; /* margin-left: 45%; */}
+ .bottomArrow{ position:absolute; width: 100%; text-align:center; bottom:1%; z-index: 11; }
+ .bottomArrow img{ width: 20px;height: 19px;}
  @-webkit-keyframes bottomArrow {
   0% {
     transform:translate(0,-5px);
