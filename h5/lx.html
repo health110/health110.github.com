@@ -24,10 +24,9 @@
 <style>
 img{ width:100%; height:100%;}
 .one_box .title{   width: 177px;height: 38px; margin:auto; }
-.one_box .one_txt{ width:296px; height:50px;  margin:auto;/* -webkit-animation: oneTxt ease-in-out 2s 1s forwards; opacity: 0;*/}
+.one_box .one_txt{ width:296px; height:50px;  margin:auto; -webkit-animation: oneTxt  2s 1s forwards; opacity: 0;}
 
 .one_img{-webkit-animation:oneZoomIn 1s;}
-.two_img{-webkit-animation:twoZoomIn 1s;}
 
 
 @-webkit-keyframes oneZoomIn {
@@ -70,19 +69,15 @@ img{ width:100%; height:100%;}
 
 
 
-.two_img{-webkit-animation:5s twoZoomIn infinite linear; 
-animation:5s cloudTranslate infinite linear ;}
+.two_img{-webkit-animation:0.8s twoZoomIn infinite linear; -webkit-animation-direction:alternate;
+animation:1s cloudTranslate infinite linear ; position:absolute;}
 @-webkit-keyframes twoZoomIn {
-  0% {
-    -webkit-transform:translate(-190px);
-            transform: translate(-190px);
+  0% { 
+  left:1px; top:-1px;-webkit-transform: rotate(-1deg);
    }
-  
   100% {
-    -webkit-transform: translate(320px);
-            transform: translate(320px);
-		 
-  }
+   left:10px; top:-10px;-webkit-transform: rotate(1deg);
+   }
 }
 
 </style>
@@ -110,7 +105,9 @@ animation:5s cloudTranslate infinite linear ;}
 
 <div data-role="page" id="pageTwo">
  <div class="one_box">
-        <img src="images/img_02.png"   class="two_img"/>
+	 <div class="two_img">
+        <img src="images/img_02.png" />
+     </div>
         <div class="one_txt">
         	<img src="images/txt_01.png"  />
         </div>
