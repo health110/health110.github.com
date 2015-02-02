@@ -47,7 +47,7 @@ background-position: 0px -30px;
             -webkit-transform: scale(0.5);
             position: fixed;
 			left: 50%;
-			top: 146px;
+			top: 105px;
 			margin-left: -25%;
             background: url(images/hand.png) 0 0 no-repeat;
             -webkit-animation-name: moveFinger;
