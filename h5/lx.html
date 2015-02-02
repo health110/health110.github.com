@@ -34,12 +34,32 @@ img{ width:100%; height:auto;}
 .sixt_txt{width:209px; height: 57px;}
 .sevent_txt{width: 190px; height:32px;}
 .eighteen_txt{width: 278px; height: 85px;}
+.css3 .nint_txt{ width:87%; height:55%; height:36px; margin:auto; overflow:hidden; -webkit-animation: txtEnd 5s linear 1 forwards;  }
 .css3 .txt_box{ margin:auto; -webkit-animation: txtBox  ease-in-out 2s 1s forwards; opacity: 0;}
 .css3 .one_img,.css3 .three_img,.css3 .four_img,.css3 .five_img,.css3 .six_img,.css3 .seven_img,.css3 .eight_img,.css3 .ninth_img,.css3 .ten_img,
-.css3 .eleven_img,.css3 .twelve_img,.css3 .thirt_img,.css3 .fourt_img,.css3 .fift_img,.css3 .sixt_img,.css3 .sevent_img,.css3 .eighteen_img{animation:imgZoomIn 1s; -webkit-animation:imgZoomIn 1s;}
+.css3 .eleven_img,.css3 .twelve_img,.css3 .thirt_img,.css3 .fourt_img,.css3 .fift_img,.css3 .sixt_img,.css3 .sevent_img{animation:imgZoomIn 1s; -webkit-animation:imgZoomIn 1s;}
 .css3 .two_img{ animation:1s twoZoomIn linear 6  alternate forwards; -webkit-animation:1s twoZoomIn linear 6  alternate forwards; margin:4% auto 1% auto;}
+.css3 .eighteen_img{animation:eightZoomIn 1s; -webkit-animation:eightZoomIn 1s;}
 .three_img,.four_img,.five_img,.six_img,.seven_img,.eight_img,.ninth_img,.ten_img,.eleven_img,.twelve_img,.thirt_img,.fourt_img,.fift_img,
 .sixt_img,.sevent_img,.eighteen_img{ margin:9% auto 1%;}
+@-webkit-keyframes txtEnd {
+  0% {
+    height:36px;
+  }
+  100% {
+	  height:265px;
+   
+  }
+}
+@keyframes txtEnd {
+0% {
+    opacity: 0; height:10%;
+  }
+  100% {
+	  height:100%;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes imgZoomIn {
   0% {
     opacity: 0;
@@ -71,6 +91,10 @@ img{ width:100%; height:auto;}
   0% {   margin:5% 0 0 0px;/*-webkit-transform: rotate(-1deg);*/  }
   100% { margin:5% 0 0 10px;/*-webkit-transform: rotate(1deg);*/  }
 }
+@-webkit-keyframes eightZoomIn {
+  0% {    }
+  100% { }
+}
 
 
 @media screen  and (max-height: 480px) {
@@ -79,6 +103,9 @@ img{ width:100%; height:auto;}
 	@-webkit-keyframes twoZoomIn {
 	  0% { 	 margin:1% 0 0 0px; }
 	  100% { margin:1% 0 0 10px;}
+	}
+	#pageNinet img {
+		-webkit-transform: scale(1);
 	}
 	.one_box .title { margin: 3% auto 1%;	}
 	.txt_box.one_txt,.txt_box.two_txt{margin-top: -14px;}
@@ -91,9 +118,10 @@ img{ width:100%; height:auto;}
 }
 
 </style>
-<div class="muisc_btn" id="fuhao"></div>
+<div class="muisc_btn" id="fuhao">
+</div>
 <div id="pageMusic" style="display: ;">
-    <audio id="h5_music" src="http://img.to8to.com/wap/weixin/simonsen.mp3" loop>
+    <audio id="h5_music" src="rain.mp3" loop>
 </audio>
 </div>
 
@@ -274,16 +302,24 @@ img{ width:100%; height:auto;}
     </div>
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div>
-<div data-role="page" class="page_content" id="pageEighteen">
+<div data-role="page" class="page_content">
     <div class="eighteen_box">
         <img src="images/img_18.png" class="eighteen_img"/>
-        <div class="txt_box eighteen_txt">
+        <span class="finger"></span>
+
+    </div>
+    <div class="txt_box eighteen_txt">
         	<img src="images/txt_18.png"  />
         </div>
-    </div>
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div>
-
+<div data-role="page" class="page_content" id="pageNinet">
+    <div class="nint_box">
+        <div class="nint_txt">
+        	<img src="images/txt_19.png"  />
+        </div>
+    </div>
+</div>
 </div>
 </div>
 <script type="text/javascript" src="js/swipe.vertical.js"></script>

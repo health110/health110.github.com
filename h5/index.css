@@ -25,10 +25,10 @@ html,body{ background-color: #fff; height: 100%;}
 /*muisc_btn*/
 .muisc_btn {
 position: fixed;
-right: 10px;
+right: 0px;
 top: 10px;
 background: url(images/sound.png) 0 0  no-repeat;
-width: 26px;
+width: 36px;
 height: 26px;
 z-index: 1000000;
 background-size: 26px 61px;
@@ -37,6 +37,27 @@ background-size: 26px 61px;
 background-position: 0px -30px;
 }
 /*muisc_btn*/
+#pageNinet{display: -moz-box;display: -webkit-box;-webkit-box-align: center;width: 100%;}
+.eighteen_box{ position: relative;}
+ .finger{
+            width: 235px;
+            height: 268px;
+			transform:scale(0.5);
+			z-index:111;
+            -webkit-transform: scale(0.5);
+            position: fixed;
+			left: 50%;
+			top: 146px;
+			margin-left: -25%;
+            background: url(images/hand.png) 0 0 no-repeat;
+            -webkit-animation-name: moveFinger;
+            -webkit-animation-iteration-count: infinite;/* 动画无限播放 */
+            -webkit-animation-timing-function: step-start;/* 马上跳到动画每一结束桢的状态 */
+            -webkit-animation-duration: 650ms;/* 动画运行的时间 */
+        }
+        @-webkit-keyframes moveFinger{
 
-        
+            50%{  background-position: 0 0;  }
+            100%{  background-position: -240px 0;  }
+        }
 
