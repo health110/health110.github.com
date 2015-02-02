@@ -123,19 +123,20 @@ img{ width:100%; height:auto;}
 /*txt_img*/
 
 @media screen  and (min-height: 480px) {
+	body{ background:#ccc;}
 .page_content .txt_box{ margin-top:10%;}
 .page_content .eight_txt{margin-top:5%;}
 .page_content .one_txt,.page_content .seven_txt,.page_content .eighteen_txt{ margin-top:0;}
 }
 
 </style>
-<!--<div class="muisc_btn" id="fuhao">
+<div class="muisc_btn" id="fuhao">
 </div>
 <div id="pageMusic" style="display: ;">
     <audio id="h5_music" src="rain.mp3" loop>
 </audio>
 </div>
--->
+
 <div id='slider' class='swipe'>
 
 <div class='swipe-wrap'>
@@ -329,12 +330,42 @@ img{ width:100%; height:auto;}
         <div class="nint_txt">
         	<img src="images/txt_19.png"  />
         </div>
+        <div class="btn_share" style="">
+        <img src="images/btn_share.png"/>
+        </div>
     </div>
-    <div class="shareFr" style="display: block;"><img src="http://img.to8to.com/wap/weixin/share.png"></div>
 </div>
 </div>
 </div>
+<style>
+.css3 .btn_share{ -webkit-animation: btnShare  ease-in-out 2s 3s forwards; position:absolute; width:0px; height:59px; left:50%; margin-left:-65px; bottom:10px;overflow: hidden;}
+@keyframes btnShare {
+0% {
+   width:0px;
+  }
+  100% {
+	  width:131px;
+  }
+}
+@-webkit-keyframes btnShare {
+0% {
+   width:0px;
+  }
+  100% {
+	  width:131px;
+  }
+}
+
+
+.btn_share img{position:absolute; width:131px; height:59px; left:0; top:0;}
+</style>
 <script type="text/javascript" src="js/swipe.vertical.js"></script>
 <script type="text/javascript" src="js/ani.js"></script>
+
+<script>
+ $(".btn_share").on("touchstart", function () {
+	 	var shareStr='<div class="shareFr" style="display: block;"><img src="http://img.to8to.com/wap/weixin/share.png"></div>';
+		$("#pageNinet").append(shareStr);
+});</script>
 </body>
 </html>
