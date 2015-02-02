@@ -15,10 +15,7 @@
 <style>
 img{ width:100%; height:auto;}
 .one_box{ height:100%;}
-.one_box .title{   width: 177px;height: 38px; height: 7%;
-width: 55%;margin:6% auto; }
-.css3 .txt_box{ margin:auto; -webkit-animation: oneTxt ease-in-out 2s 1s forwards; opacity: 0;}
-
+.one_box .title{   width: 177px;height: 38px; height: 7%;width: 55%;margin:6% auto; }
 .one_txt{ width:296px; height:50px; width: 92.5%;height: 14%;}
 .two_txt{ width:232px; height:79px;}
 .three_txt{ width:120px; height: 29px;}
@@ -37,12 +34,13 @@ width: 55%;margin:6% auto; }
 .sixt_txt{width:209px; height: 57px;}
 .sevent_txt{width: 190px; height:32px;}
 .eighteen_txt{width: 278px; height: 85px;}
-.css3 .one_img,.css3 .three_img,.css3 .four_img,.css3 .five_img,.css3 .six_img,.css3 .seven_img,
-.css3 .eight_img,.css3 .ninth_img,.css3 .ten_img,.css3 .eleven_img,.css3 .twelve_img,.css3 .thirt_img,.css3 .fourt_img,.css3 .fift_img,.css3 .sixt_img,.css3 .sevent_img,.css3 .eighteen_img{-webkit-animation:oneZoomIn 1s; }
-.three_img,.four_img,.five_img,.six_img,.seven_img,.eight_img,.ninth_img,.ten_img,.eleven_img,.twelve_img,.thirt_img,.fourt_img,.fift_img,.sixt_img,.sevent_img,.eighteen_img{ margin:9% auto 1%;}
-
-
-@-webkit-keyframes oneZoomIn {
+.css3 .txt_box{ margin:auto; -webkit-animation: txtBox  ease-in-out 2s 1s forwards; opacity: 0;}
+.css3 .one_img,.css3 .three_img,.css3 .four_img,.css3 .five_img,.css3 .six_img,.css3 .seven_img,.css3 .eight_img,.css3 .ninth_img,.css3 .ten_img,
+.css3 .eleven_img,.css3 .twelve_img,.css3 .thirt_img,.css3 .fourt_img,.css3 .fift_img,.css3 .sixt_img,.css3 .sevent_img,.css3 .eighteen_img{animation:imgZoomIn 1s; -webkit-animation:imgZoomIn 1s;}
+.css3 .two_img{ animation:1s twoZoomIn linear 6  alternate forwards; -webkit-animation:1s twoZoomIn linear 6  alternate forwards; margin:4% auto 1% auto;}
+.three_img,.four_img,.five_img,.six_img,.seven_img,.eight_img,.ninth_img,.ten_img,.eleven_img,.twelve_img,.thirt_img,.fourt_img,.fift_img,
+.sixt_img,.sevent_img,.eighteen_img{ margin:9% auto 1%;}
+@-webkit-keyframes imgZoomIn {
   0% {
     opacity: 0;
 	 -webkit-transform: scale3d(.3, .3, .9);
@@ -52,19 +50,11 @@ width: 55%;margin:6% auto; }
     opacity: 1;
   }
 }
-
-@keyframes oneZoomIn {
-  0% {
-	   -webkit-transform: scale3d(.3, .3, .9);
-            transform: scale3d(.3, .3, .9);
-    opacity: 0;
-  }
- 
-  100% {
-    opacity: 1;
-  }
+@keyframes imgZoomIn {
+  0% {-webkit-transform: scale3d(.3, .3, .9); transform: scale3d(.3, .3, .9); opacity: 0; }
+  100% {opacity: 1;}
 }
-@-webkit-keyframes oneTxt {
+@-webkit-keyframes txtBox {
   0% {
 	  /* -webkit-transform: scale3d(.1, .1, .4);
             transform: scale3d(.1, .1, .4);*/
@@ -77,22 +67,9 @@ width: 55%;margin:6% auto; }
   }
 }
 
-
-
-
-
-
-
-
-.css3 .two_img{-webkit-animation:1s twoZoomIn linear 6  alternate forwards; animation:1s twoZoomIn linear 6  alternate forwards; margin:4% auto 1% auto;
-}
 @-webkit-keyframes twoZoomIn {
-  0% { 
- margin:5% 0 0 0px;/*-webkit-transform: rotate(-1deg);*/
-   }
-  100% {
-   margin:5% 0 0 10px;/*-webkit-transform: rotate(1deg);*/
-   }
+  0% {   margin:5% 0 0 0px;/*-webkit-transform: rotate(-1deg);*/  }
+  100% { margin:5% 0 0 10px;/*-webkit-transform: rotate(1deg);*/  }
 }
 
 
@@ -100,14 +77,10 @@ width: 55%;margin:6% auto; }
 	.page_content img{-webkit-transform: scale(0.9);}
 	.two_img{margin: 0 auto;}
 	@-webkit-keyframes twoZoomIn {
-	  0% { 
-	 margin:1% 0 0 0px;
-	   }
-	  100% {
-	   margin:1% 0 0 10px;
-	   }
+	  0% { 	 margin:1% 0 0 0px; }
+	  100% { margin:1% 0 0 10px;}
 	}
-	.one_box .title {	margin: 3% auto 1%;	}
+	.one_box .title { margin: 3% auto 1%;	}
 	.txt_box.one_txt,.txt_box.two_txt{margin-top: -14px;}
 	.seven_img,.eight_img,.ninth_img,.ten_img,.eleven_img,.twelve_img,.thirt_img{margin: -4% auto 0;}
 	.fourt_img,.eighteen_img{margin: -3% auto 0;}
@@ -128,7 +101,7 @@ width: 55%;margin:6% auto; }
 
 <div class='swipe-wrap'>
 
-<div data-role="page" class="page_content css3" id="pageOne">
+<div data-role="page" class="page_content css3">
     <div class="one_box">
     	<div class="title" >
            	<img src="images/title.png"  />
@@ -141,7 +114,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div>
 
-<div data-role="page" class="page_content" id="pageTwo">
+<div data-role="page" class="page_content">
  <div class="two_box">
         <img src="images/img_02.png" /  class="two_img">
         <div class="txt_box two_txt">
@@ -151,7 +124,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page -->
 
-<div data-role="page" class="page_content" id="pageThree">
+<div data-role="page" class="page_content" >
    <div class="three_box">
         <img src="images/img_03.png" class="three_img"/>
         <div class="txt_box three_txt">
@@ -161,7 +134,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page -->
 
-<div data-role="page" class="page_content" id="pageFour">
+<div data-role="page" class="page_content">
 
     <div class="four_box">
         <img src="images/img_04.png"  class="four_img"/>
@@ -173,7 +146,7 @@ width: 55%;margin:6% auto; }
 </div><!-- /page -->
 
 
-<div data-role="page" class="page_content" id="pageFive">
+<div data-role="page" class="page_content">
 
     <div class="five_box">
         <img src="images/img_05.png"  class="five_img"/>
@@ -184,7 +157,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page -->
 
-<div data-role="page" class="page_content" id="pageSix">
+<div data-role="page" class="page_content" >
 
     <div class="six_box">
         <img src="images/img_06.png" class="six_img"/>
@@ -195,7 +168,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page-->
 
-<div data-role="page" class="page_content" id="pageSeven">
+<div data-role="page" class="page_content">
 
     <div class="seven_box">
         <img src="images/img_07.png" class="seven_img"/>
@@ -206,7 +179,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page -->
 
-<div data-role="page" class="page_content" id="pageEight">
+<div data-role="page" class="page_content">
 
     <div class="eight_box">
         <img src="images/img_08.png"  class="eight_img"/>
@@ -217,7 +190,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page -->
 
-<div data-role="page" class="page_content" id="pageNinth">
+<div data-role="page" class="page_content">
     <div class="ninth_box">
         <img src="images/img_09.png" class="ninth_img" />
         <div class="txt_box ninth_txt">
@@ -227,7 +200,7 @@ width: 55%;margin:6% auto; }
     <div class="bottomArrow"><img src="images/arrow.png" class="ArrowAni"></div>
 </div><!-- /page p9-bottom-halfCircle-->
 
-<div data-role="page" class="page_content" id="pageTen">
+<div data-role="page" class="page_content">
     <div class="ten_box">
         <img src="images/img_10.png" class="ten_img"/>
         <div class="txt_box ten_txt">

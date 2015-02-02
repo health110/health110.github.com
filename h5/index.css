@@ -22,7 +22,21 @@ html,body{ background-color: #fff; height: 100%;}
 	-webkit-transform: translate(0,-5px);		 
    }
 }
-
+/*muisc_btn*/
+.muisc_btn {
+position: fixed;
+right: 10px;
+top: 10px;
+background: url(images/sound.png) 0 0  no-repeat;
+width: 26px;
+height: 26px;
+z-index: 1000000;
+background-size: 26px 61px;
+}
+.music_stop {
+background-position: 0px -30px;
+}
+/*muisc_btn*/
 
         
 
