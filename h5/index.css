@@ -33,9 +33,7 @@ height: 26px;
 z-index: 1000000;
 background-size: 26px 61px;
 }
-.music_stop {
-background-position: 0px -30px;
-}
+.music_stop {background-position: 0px -30px;}
 /*muisc_btn*/
 #pageNinet{display: -moz-box;display: -webkit-box;-webkit-box-align: center;width: 100%;}
 .eighteen_box{ position: relative;}
@@ -47,7 +45,7 @@ background-position: 0px -30px;
             -webkit-transform: scale(0.5);
             position: fixed;
 			left: 50%;
-			top: 105px;
+			top: 150px;
 			margin-left: -25%;
             background: url(images/hand.png) 0 0 no-repeat;
             -webkit-animation-name: moveFinger;
@@ -56,8 +54,18 @@ background-position: 0px -30px;
             -webkit-animation-duration: 650ms;/* 动画运行的时间 */
         }
         @-webkit-keyframes moveFinger{
-
-            50%{  background-position: 0 0;  }
-            100%{  background-position: -240px 0;  }
+			25%{ background-position: 0 0; }
+			50%{  background-position: -240px 0;  }
+			100%{  background-position: -480px 0;  }
         }
 
+.shareFr {
+position: absolute;
+left:0;
+top: 0;
+display: none;
+height: 100%;
+width: 100%;
+background: rgba(0,0,0,0.7);
+text-align: center;
+}
