@@ -3,16 +3,28 @@ function playMusic() {
     $(".muisc_btn").removeClass('music_stop');
     document.getElementById('h5_music').play();
 }
-
 var mySwipe;
-
-$(function () {
+				
     mySwipe = Swipe($('#slider').get(0), $('#slider').get(0), {
 		continuous : false,
         speed: 100,
 		callback : function( index ){
 			$('.page_content').removeClass("css3");
 			$('.page_content').eq(index).addClass("css3");
+			if( index==18)
+			    {
+
+					 $(".btn_share").click(function () {
+						$(".shareFr").show(300);
+						$("#fuhao").hide();
+					});
+					
+				}
+				else{
+					$(".shareFr").hide(300);
+					$("#fuhao").show();
+					}
+	
 		}
     });
 	
@@ -38,8 +50,6 @@ $(function () {
             $('#slider').off('touchstart.fstSet');
         }
     });
-
-   
-});
-
-
+	
+	
+	
