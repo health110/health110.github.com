@@ -105,6 +105,7 @@ function loadScript(src, cb){
     //    alert(navigator.userAgent);
 
         /***********************音乐播放************************* */
+		/*
         var mp3 = document.getElementById('mp3');
         mp3.src  = 'audio/zxt.mp3';
         var playBtn = $("#mp3_btn"),
@@ -136,6 +137,7 @@ function loadScript(src, cb){
                 $('#slider').off('touchstart.fstSet');
             }
         });
+		*/
         /***********************音乐播放**************************/
 
         /********图片延迟加载************/
