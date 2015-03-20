@@ -6,14 +6,11 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <title>装修需要花多少时间 - 土巴兔装修网</title>
-    <link rel="stylesheet" href="css/lib/normalize.css"/>
-    <link rel="stylesheet" href="css/zxt.css"/>
-    <title>标题</title>
+    <title>HTML5 head meta</title>
     <style>
 	body{font: 14px/1.5 "Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
   color: #333;}
-  p:nth-child(2n-1){ color:#999;}
+    p:nth-child(2n-1){ color:#999;}
 	</style>
 </head>
 <body>
@@ -25,11 +22,11 @@
     &lt;meta name="description" content="不超过150个字符"/&gt;</p>
     <p>&lt;!-- 页面关键词 --&gt;</p><p>
     &lt;meta name="keywords" content=""/&gt;</p>
-	<p>    &lt;!-- 网页作者 --&gt;</p><p>
+	<p>&lt;!-- 网页作者 --&gt;</p><p>
     &lt;meta name="author" content="yuki.liu, yuki.liu@corp.to8to.com"/&gt;</p>
-<p>    &lt;!-- 搜索引擎抓取 --&gt;</p><p>
+    <p>&lt;!-- 搜索引擎抓取 --&gt;</p><p>
     &lt;meta name="robots" content="index,follow"/&gt;</p>
-<p>    &lt;!-- 为移动设备添加 viewport --&gt;</p><p>
+    <p>&lt;!-- 为移动设备添加 viewport --&gt;</p><p>
     &lt;meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no"&gt;</p><p>
     &lt;!-- "width=device-width" 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz --&gt;<br/><br/>
     &lt;!-- iOS 设备 begin --&gt;
@@ -110,4 +107,126 @@
     </body>
     
     </html>
+    <script>
+	var to8toWx = to8toWx || {};
+
+// 微信API 列表
+to8toWx.apiList = [
+    'onMenuShareTimeline',
+    'onMenuShareAppMessage',
+    'onMenuShareQQ',
+    'onMenuShareWeibo',
+    'startRecord',
+    'stopRecord',
+    'onVoiceRecordEnd',
+    'playVoice',
+    'pauseVoice',
+    'stopVoice',
+    'onVoicePlayEnd',
+    'uploadVoice',
+    'downloadVoice',
+    'chooseImage',
+    'previewImage',
+    'uploadImage',
+    'downloadImage',
+    'translateVoice',
+    'getNetworkType',
+    'openLocation',
+    'getLocation',
+    'hideOptionMenu',
+    'showOptionMenu',
+    'hideMenuItems',
+    'showMenuItems',
+    'hideAllNonBaseMenuItem',
+    'showAllNonBaseMenuItem',
+    'closeWindow',
+    'scanQRCode',
+    'chooseWXPay',
+    'openProductSpecificView',
+    'addCard',
+    'chooseCard',
+    'openCard'
+];
+
+// 异步获取签名参数url
+to8toWx.ajaxUrl = 'http://m.to8to.com/hfive/getsignstr/';
+
+/**
+ * 初始化微信JS
+ * @param opts
+ * @returns {to8toWx}
+ */
+to8toWx.init = function(opts) {
+    var _this = this;
+    opts = $.extend({}, opts);
+
+    // 获取签名串
+    getSignature(function(configs) {
+        // 初始化微信配置
+        var wxConfig = {
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: configs.appId, // 必填，公众号的唯一标识
+            timestamp: configs.timestamp, // 必填，生成签名的时间戳
+            nonceStr: configs.nonceStr, // 必填，生成签名的随机串
+            signature: configs.signature,// 必填，签名，见附录1
+            jsApiList: to8toWx.apiList // 必填，需要使用的JS接口列表
+        };
+
+        // 设置微信配置
+        wx.config(wxConfig);
+
+        // 微信初始化callback
+        wx.ready(function(){
+            if (typeof opts.onReady === 'function') {
+                opts.onReady.call(_this);
+            }
+        });
+    });
+
+    return this;
+}
+
+/**
+ * 执行WX api列表中的方法
+ * 有些方法必须在wx.ready中执行，有些不受限制
+ *
+ * @param apiName
+ * @param opt
+ * @returns {to8toWx}
+ */
+to8toWx.exec = function(apiName, opt) {
+    try {
+        wx[apiName](opt);
+    } catch (e) {
+        throw new Error('方法'+apiName+'不存在！');
+    }
+    return this;
+}
+
+/**
+ * 获取签名串
+ * 支持同步和异步
+ * @param callback
+ */
+function getSignature(callback) {
+    if (typeof to8toWxsignPackage !== 'undefined') {
+        if (typeof callback === 'function') {
+            callback(to8toWxsignPackage);
+        } else {
+            return to8toWxsignPackage;
+        }
+    } else {
+        $.post(to8toWx.ajaxUrl, {
+            url: encodeURIComponent(location.href.split('#')[0])
+        },function(configs) {
+            if (typeof callback === 'function') {
+                callback(configs);
+            }
+        }, 'json');
+    }
+}
+
+
+
+	</script>
     
