@@ -2775,8 +2775,8 @@ display: inline-block;border-style: solid;width: 14/@w; height: 8/@w; border-col
 .da-content,
 .data-list dt,
 .data-list dd {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -2785,6 +2785,7 @@ display: inline-block;border-style: solid;width: 14/@w; height: 8/@w; border-col
   -moz-box-align: center;
   background: #e7e7e9;
 }
+
 .data-list {
   border-radius: 0 0 4px 4px;
 }
