@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <title>中升之家数据中心</title>
+  <link rel="stylesheet" href="css/global.css">
+  <!-- less 文件一定要在less.js之前-->
+  <script src="js/zepto.min.js"></script>
+  <script src="js/fastclick.js"></script>
+</head>
+
+<body>
+  <article>
+    <header class="date-title">
+      <div class="da-select">
+        <select name="" id="">
+          <option value="">深圳南山丰田店</option>
+          <option value="">深圳宝安丰田店</option>
+        </select>
+      </div>
+    </header>
+    <section class="da-content-sec">
+      <ul class="da-content">
+        <li class="on"><a>每日动态</a></li>
+        <li><a>续保统计</a></li>
+        <li><a>优惠券统计</a></li>
+      </ul>
+      <section class="data1">
+        <dl class="data-list">
+          <dt><span>时间</span><span>询价</span><span>报价</span><span>意向客户</span><span>已支付</span><span>已出单</span><span>预存</span></dt>
+          <dd class="da-current"><span>当日</span><span>3003003</span><span>180</span><span>188</span><span>108</span><span>11</span><span>2</span></li>
+            <dd><span>11.08</span><span>301</span><span>188</span><span>170</span><span>108</span><span>100</span><span>2</span></li>
+              <dd><span>11.08</span><span>301</span><span>188</span><span>170</span><span>108</span><span>100</span><span>&nbsp;</span></li>
+                <dd><span>11.09</span><span>301</span><span>188</span><span>170</span><span>108</span><span>100</span><span>2</span></li>
+                  <dd><span>11.10</span><span>301</span><span>188</span><span>170</span><span>108</span><span>100</span><span>2</span></li>
+        </dl>
+      </section>
+      <section class="data2" style="display: none;">
+        <dl class="data-list">
+          <dt><span>日期</span><span>到期客户</span><span>已报价</span><span>意向客户</span><span>已支付</span><span>已出单</span><span>续保率</span></dt>
+          <dd><span>2017.01</span><span>300</span><span>180</span><span>180</span><span>108</span><span>108</span><span>2</span></dd>
+          <dd><span>2017.02</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.03</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd class="da-current"><span>当月</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.05</span><span>300</span><span>180</span><span>180</span><span>108</span><span>108</span><span>2</span></dd>
+          <dd><span>2017.06</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.07</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.08</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.09</span><span>300</span><span>180</span><span>180</span><span>108</span><span>108</span><span>2</span></dd>
+          <dd><span>2017.10</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.11</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+          <dd><span>2017.12</span><span>301</span><span>18</span><span>170</span><span>108</span><span>100</span><span>2</span></dd>
+        </dl>
+      </section>
+      <section class="data3" style="display: none;">
+        <dl class="data-list">
+          <dt><span>发放概况</span><span>已发放</span><span>已核销</span><span>已过期</span><span>使用率</span></dt>
+          <dd>
+            <span>全车打蜡<br><b class="fc-green">发放中</b></span>
+            <span>300</span>
+            <span>180</span>
+            <span>188880</span>
+            <span>33.3%</span>
+          </dd>
+          <dd>
+            <span>镀晶<br><b class="fc-green">发放中</b></span>
+            <span>300</span>
+            <span>180</span>
+            <span>188880</span>
+            <span>33.3%</span>
+          </dd>
+          <dd>
+            <span>喷漆<br><b class="fc-red">已停止发放</b></span>
+            <span>300</span>
+            <span>180</span>
+            <span>188880</span>
+            <span>33.3%</span>
+          </dd>
+        </dl>
+      </section>
+    </section>
+    <div class="graph"></div>
+  </article>
+</body>
+
+</html>
+<style>
+/*
+
+ .da-content li.on:before{ content: ""; display: block; height: 0; width: 100%; border-width: 0px 15px 44px 15px; border-style: none solid solid; border-color: transparent transparent #fff; position: absolute;left: 0; top: 0;    box-sizing: border-box; } 
+*/
+</style>
+<script>
+FastClick.attach(document.body);
+
+$('.da-content li').click(function() {
+  var _this = $(this);
+  $('.da-content li').removeClass('on');
+  _this.addClass('on');
+  $(_this.parent().siblings('section')).hide();
+  // $('.data ').siblings('section').hide();
+  $($(_this.parent().siblings('section')).eq(_this.index())).show();
+})
+</script>
