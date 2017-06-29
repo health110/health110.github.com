@@ -1,16 +1,9 @@
 ﻿<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection"content="telephone=no, email=no" />
-<title>css3随便玩玩</title>
-    <script  type="text/javascript" src="http://static.to8to.com/to8to_pc/common/libs/jquery-1.10.2.min.js?v=1495197235"></script>
-
+    <title>添加附件</title>
 </head>
-
-<body>
+<script  type="text/javascript" src="dream/js/jquery.min.js"></script>
+<body class="body">
 <form>  <input type="file" id="choosefile" />
     <input type="file"  id="f" style="display:none;" />  </form>
 </body>
@@ -18,5 +11,6 @@
 <script type="text/javascript">
     $("#choosefile").click(function () {
         document.getElementById("f").click();
+        var path = document.getElementById("f").value;
     })
 </script>
