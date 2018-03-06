@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前端开发 ui demo</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/function.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<link href="../css/core.css" rel="stylesheet" type="text/css">
+<link href="../css/animation.css" rel="stylesheet" type="text/css">
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/function.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<link href="../css/core.css" rel="stylesheet" type="text/css">
+<link href="../css/animation.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+<script src="../js/html5.js"></script>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/swiper.min.js"></script><script src="../js/jquery-1.8.3.min.js"></script>
+
+
+<style type="text/css">
+#dowebok{width:280px;height:100px;border-radius:5px;background:#51acdd;color:#fff;text-align:center;line-height:100px}
+</style>
+</head>
+
+<body>
+<!-- 导航开始 -->
+<nav class="g-nv f-usn">
+  <div class="g-wapper">
+    <div class="g-m1">
+    <a href="javascript:;" class="icon-return" id="i-return"><img src="../images/icon-return.png" width="30" height="30"></a>
+     <ul class="navlist">
+      <li class="first"><a href="../standard.html">规范</a></li>
+      <li><a href="../workguidelines.html">重构工作指引</a></li>
+      <li class="first"><a href="../library.html">代码库</a><i></i></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!-- 导航结束 --> 
+
+<!-- 内容开始 -->
+<section>
+  <div class="g-m">
+    <div class="g-in">
+    <div class="merry_box fn-clear">
+      <div class="merry_l fl"></div>
+      <div class="fl">
+        <b class="merry_p1"><i class="line"></i></b>
+        <b class="merry_p2"><i class="line"></i></b>
+        <b class="merry_p3"><i class="line"></i></b>
+      </div>
+      <div class="merry_r fl"></div>
+    </div>
+      <h3 class="h-title1 mtb20">html代码为：</h3>
+      <div class="i-code">
+      <pre class="brush:xml"><textarea id="Text" style="height: 150px;">
+<div class="merry_box fn-clear">
+  <div class="merry_l fl"></div>
+  <div class="fl">
+    <b class="merry_p1"><i class="line"></i></b>
+    <b class="merry_p2"><i class="line"></i></b>
+    <b class="merry_p3"><i class="line"></i></b>
+  </div>
+  <div class="merry_r fl"></div>
+</div>
+      </textarea>
+</pre>
+      <div class="i-copyborder"> <span class="i-copy"> Copy</span> </div>
+    </div>
+    <h3 class="h-title1 mtb20">css代码为：</h3>
+    <div class="i-code">
+      <pre class="brush:xml"><textarea style="height: 2400px;">
+.merry_box{ margin:0 30px;    width:300px;border-top: 20px solid #ddd;}
+.merry_box .fl{ float:left;  }
+.merry_l + div{margin-left:-7px;}
+.merry_l,.merry_r,.merry_l:before,.merry_r:before,.merry_p1 i,.merry_p2 i,.merry_p3 i{width: 44px;height: 44px;background:url(../images/merry.png) no-repeat;}
+.merry_l,.merry_r{ position:relative; width: 64px;height: 100px;}
+.merry_l:before,.merry_r:before{ z-index: 3;content:""; position:absolute;bottom: 0;background-position: -132px -26px;}
+.merry_l:after,.merry_r:after{ z-index: 2;content:""; position:absolute; width: 30px;height: 80px;border-right: 1px solid #ddd; left: 28px;}
+.merry_l:before{left: 29px;}
+.merry_r:before{left: 14px;}
+.merry_l:after{left: 20px;}
+.merry_r:after{left: 4px;}
+.merry_p1 ,.merry_p2,.merry_p3{ display:inline-block;position:relative;width: 30px;height: 90px;border-right: 1px solid #ddd;border-image-width:10px;}
+.merry_p1 i,.merry_p2 i,.merry_p3 i{  left:10px; position:absolute; bottom: -12px;background-position: -132px -26px; }
+.merry_r{ background-position:-178px 6px; width:126px; }
+.merry_l{ transform-origin:right top; -webkit-transform-origin:right top; animation:merry_animate_l 3s infinite;   -webkit-animation:merry_animate_l  3s infinite; -moz-animation:merry_animate_l  3s infinite; -o-animation:merry_animate_l  3s infinite;}
+@keyframes merry_animate_l{    
+  0% {transform:rotate(70deg);}
+  20%{transform:rotate(0);}
+  80% {transform:rotate(0);}
+  100% {transform:rotate(70deg);}
+}
+@-webkit-keyframes merry_animate_l{
+  0% {transform:rotate(70deg);-webkit-transform:rotate(70deg);}
+  20%{transform:rotate(0);-webkit-transform:rotate(0);}
+  80% {transform:rotate(0);-webkit-transform:rotate(0);}
+  100% {transform:rotate(70deg);-webkit-transform:rotate(0);}
+}
+@-moz-keyframes merry_animate_l{
+  0% {transform:rotate(70deg);}
+  20%{transform:rotate(0);}
+  80% {transform:rotate(0);}
+  100% {transform:rotate(70deg);}
+}
+
+@-o-keyframes merry_animate_l{
+  0% {transform:rotate(70deg);}
+  20%{ transform:rotate(0); }
+  80% {transform:rotate(0);}
+  100% {transform:rotate(70deg);}
+}
+.merry_r{ transform-origin:0 20px;   -webkit-transform-origin:0 20px;    animation:merry_animate_r 3s infinite;    -webkit-animation:merry_animate_r 3s infinite;    -moz-animation:merry_animate_r 3s infinite;    -o-animation:merry_animate_r 3s infinite;}
+@keyframes merry_animate_r{
+  30%{transform:rotate(0);}
+  50% {transform:rotate(-60deg);}
+  70%{transform:rotate(0);}
+}
+@-webkit-keyframes merry_animate_r{
+  30%{transform:rotate(0);-webkit-transform:rotate(0);}
+  50% {transform:rotate(-60deg);-webkit-transform:rotate(-60deg); }
+  70%{transform:rotate(0);-webkit-transform:rotate(0); }
+}
+@-moz-keyframes merry_animate_r{
+  30%{transform:rotate(0);}
+  50% {transform:rotate(-60deg);}
+  70%{transform:rotate(0);}
+}
+@-o-keyframes merry_animate_r{
+  30%{  transform:rotate(0);  }
+  50% {  transform:rotate(-60deg);  }
+  70%{  transform:rotate(0);  }
+}
+.merry_p1{transform-origin:right top;-webkit-transform-origin:right top;animation:p1_ani 3s infinite;-webkit-animation:p1_ani 3s infinite;-moz-animation:p1_ani 3s infinite;-o-animation:p1_ani 3s infinite;}
+@keyframes p1_ani{
+  20%{transform:rotate(0);-webkit-transform:rotate(0);}
+  22% {transform:rotate(-2deg);-webkit-transform:rotate(-2deg);}
+  24%{transform:rotate(0);-webkit-transform:rotate(0);}
+  75%{transform:rotate(0);-webkit-transform:rotate(0);}
+  80%{transform:rotate(6deg);-webkit-transform:rotate(6deg);}
+  85%{transform:rotate(0);-webkit-transform:rotate(0);}
+}
+@-webkit-keyframes p1_ani{
+  20%{transform:rotate(0);-webkit-transform:rotate(0);}
+  22% {
+  transform:rotate(-2deg);-webkit-transform:rotate(-2deg);}
+  24%{transform:rotate(0);-webkit-transform:rotate(0);}
+  75%{transform:rotate(0);-webkit-transform:rotate(0);}
+  80%{transform:rotate(6deg);-webkit-transform:rotate(6deg);}
+  85%{transform:rotate(0);-webkit-transform:rotate(0);}
+}
+@-moz-keyframes p1_ani{
+  20%{transform:rotate(0);}
+  22% {transform:rotate(-2deg);}
+  24%{transform:rotate(0);}
+  75%{transform:rotate(0);}
+  80%{transform:rotate(6deg);}
+  85%{transform:rotate(0);}
+}
+@-o-keyframes p1_ani{
+  20%{transform:rotate(0);}
+  22% {transform:rotate(-2deg);}
+  24%{transform:rotate(0);}
+  75%{transform:rotate(0);}
+  80%{transform:rotate(6deg);}
+  85%{transform:rotate(0);}
+}
+.merry_p2{transform-origin:right top;-webkit-transform-origin:right top;animation:p2_ani 3s infinite;-webkit-animation:p2_ani 3s infinite;-moz-animation:p2_ani 3s infinite;-o-animation:p2_ani 3s infinite;}
+@keyframes p2_ani{
+  22%{transform:rotate(0);}
+  25% {transform:rotate(-4deg);}
+  28%{transform:rotate(0);}
+  72%{transform:rotate(0);}
+  75%{transform:rotate(4deg);}
+  78%{transform:rotate(0);}
+}
+@-webkit-keyframes p2_ani{
+  22%{transform:rotate(0);-webkit-transform:rotate(0);}
+  25% {transform:rotate(-4deg);-webkit-transform:rotate(-4deg);}
+  28%{transform:rotate(0);-webkit-transform:rotate(0);}
+  72%{transform:rotate(0);-webkit-transform:rotate(0);}
+  75%{transform:rotate(4deg);-webkit-transform:rotate(4deg);}
+  78%{transform:rotate(0);-webkit-transform:rotate(0);}
+}
+@-moz-keyframes p2_ani{
+  22%{transform:rotate(0);}
+  25% {transform:rotate(-4deg);}
+  28%{transform:rotate(0);}
+  72%{transform:rotate(0);}
+  75%{transform:rotate(4deg);}
+  78%{transform:rotate(0);}
+}
+@-o-keyframes p2_ani{
+  22%{transform:rotate(0);}
+  25% {transform:rotate(-4deg);}
+  28%{transform:rotate(0);}
+  72%{transform:rotate(0);}
+  75%{transform:rotate(4deg);}
+  78%{transform:rotate(0);}
+}       
+
+.merry_p3{transform-origin:right top;-webkit-transform-origin:right top;animation:p3_ani 3s infinite;-webkit-animation:p3_ani 3s infinite;-moz-animation:p3_ani 3s infinite;-o-animation:p3_ani 3s infinite;}
+@keyframes p3_ani{
+  25%{transform:rotate(0);}
+  30% {transform:rotate(-6deg);}
+  35%{transform:rotate(0);}
+  70% {transform:rotate(0);}
+  72% {transform:rotate(2deg);}
+  74%{transform:rotate(0);}
+}
+@-webkit-keyframes p3_ani{
+  25%{transform:rotate(0);-webkit-transform:rotate(0);}
+  30% {transform:rotate(-6deg);-webkit-transform:rotate(-6deg);}
+  35%{transform:rotate(0);-webkit-transform:rotate(0);}
+  70% {transform:rotate(0);-webkit-transform:rotate(0);}
+  72% {transform:rotate(2deg);-webkit-transform:rotate(2deg);}
+  74%{transform:rotate(0);-webkit-transform:rotate(0);}
+}
+
+@-moz-keyframes p3_ani{
+  25%{transform:rotate(0);}
+  30% {transform:rotate(-6deg);}
+  35%{transform:rotate(0);}
+  70% {transform:rotate(0);}
+  72% {transform:rotate(2deg);}
+  74%{transform:rotate(0);}
+}
+@-o-keyframes p3_ani{
+  25%{transform:rotate(0);}
+  30% {transform:rotate(-6deg);}
+  35%{transform:rotate(0);}
+  70% {transform:rotate(0);}
+  72% {transform:rotate(2deg);}
+  74%{transform:rotate(0);}
+}</textarea>
+</pre>
+      <div class="i-copyborder"> <span class="i-copy"> Copy</span> </div>
+    </div>
+  </div>
+  </div>
+  <div class="i-popup" style="display:none;"><img src="../images/ok.png" width="40" height="52"><span>已复制好，快去粘贴吧！</span></div>
+</section>
+<!-- 内容结束 -->
+</body>
+</html>
+<script type="text/javascript" src="../js/lib/sea.js?v=20160727"></script>
+<script type="text/javascript" src="../js/lib/seaconfig.js?v=20160727"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+seajs.use(['toggleTab','header'])
+/*]]>*/
+</script>

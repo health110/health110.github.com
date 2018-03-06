@@ -1,0 +1,999 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前端开发 ui demo</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/function.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<link href="../css/core.css" rel="stylesheet" type="text/css">
+<link href="../css/animation.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+</head>
+<style>
+.i-code {    position: absolute;  top: -34px;      right: -140px;}
+.i-code pre{ opacity: 0; }
+</style>
+<body>
+<!-- 导航开始 -->
+<nav class="g-nv f-usn">
+  <div class="g-wapper">
+    <ul class="navlist">
+      <li class="first"><a href="../standard.html">规范</a><i></i></li>
+      <li><a href="../workguidelines.html">重构工作指引</a></li>
+      <li><a href="../library.html">代码库</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- 导航结束 --> 
+
+<!-- 内容开始 -->
+<section>
+  <div class="g-bd">
+    <div class="g-in">
+      <div class="g-sd">
+        <div class="i-menu">
+          <ul id="tab" class="tab">
+            
+            <li><a href="javascript:;">列表模板</a></li>
+            <li><a href="javascript:;">常用图标</a></li>
+            <li><a href="javascript:;" name="grid" id="grid">常见bug</a></li>
+            <li><a href="javascript:;" name="unit" id="unit">原件</a></li>
+            <li><a href="javascript:;" name="skill" id="skill">技巧</a></li>
+            <li><a href="javascript:;" name="animate" id="animate">动画</a></li>
+            <li><a href="javascript:;" name="animate" id="module" class="toggleLi">模块<em class="tab-point"></em></a>
+            <div class="tab-two-level" style="display:;">
+                <a href="javascript:;" class="current">tab切换</a>
+                <a href="javascript:;">图片轮播</a>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:;" id="layout" class="toggleLi">布局<em class="tab-point"></em></a>
+              <div class="tab-two-level" style="display:;">
+                <a href="javascript:;" class="current">头部</a>
+                <a href="javascript:;">底部</a>
+              </div>
+            </li>
+            <li><a href="javascript:;" name="media" id="media">媒体查询</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+        <td colspan=""></td></tr>
+      </table>
+      <div class="g-mn">
+        <div class="g-mnc">
+          <div id="i-content">
+<div id="part0"  style="display:none;">
+
+<h2 class="h-title mb20">列表布局汇总</h2>
+                <div class="grayline"></div>
+                  <div class="" style="width:640px; margin:10px 0;">
+                    <section style="background:#eee;">
+             
+<div class="txt">带图片三列布局</div>
+          <div class="psr">
+      <div class="list-row-detail">
+          <ul>
+              <li>
+                  <span class="list-left"><img src="http://dummyimage.com/180x180" alt=""></span>
+                  <span class="list-center">美孚/mobil 1号全合成机油5W40SN级（4L装）美孚1号</span>
+                  <div class="list-right tar">
+                      <p class="price">¥&nbsp;298</p>
+                      <p class="num">x1</p>
+                  </div>
+
+              </li>
+          </ul>
+          <div class="payment-go"><a class="btn-payment">去支付</a></div>
+      </div>
+
+
+      <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+            <div class="list-row-detail">
+              <ul>
+                  <li>
+                      <span class="list-left"><img src="http://dummyimage.com/180x180" alt=""></span>
+                      <span class="list-center">美孚/mobil 1号全合成机油5W40SN级（4L装）美孚1号</span>
+                      <div class="list-right tar">
+                          <p class="price">¥&nbsp;298</p>
+                          <p class="num">x1</p>
+                      </div>
+
+                  </li>
+              </ul>
+              <div class="payment-go"><a class="btn-payment">去支付</a></div>
+            </div>
+          
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+
+      </div>
+      <div class="txt">有小icon红色字体且带箭头列表</div>
+      <div class="psr">
+        <div class="select-arrow">
+          <ul>
+            <li>
+                <em class="icon-big"><i class="icon-addres"><img src="http://dummyimage.com/180x180" alt=""></i></em>
+                <div class="vh">收货地址</div>
+            </li>
+          </ul>
+        </div>
+
+      <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+          <div class="select-arrow">
+            <ul>
+              <li>
+                  <em class="icon-big"><i class="icon-addres"><img src="http://dummyimage.com/180x180" alt=""></i></em>
+                  <div class="vh">收货地址</div>
+              </li>
+            </ul>
+          </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+      
+
+      </div>
+      <div class="txt">有小icon黑色字体且带箭头列表</div>
+      <div class="psr">
+        <div class="select-list-arrow">
+          <ul>
+            <li>
+                <em class="icon-big"><i class="icon-addres"><img src="http://dummyimage.com/180x180" alt=""></i></em>
+                <div class="vh">收货地址</div>
+            </li>
+          </ul>
+        </div>
+         <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+        <div class="select-list-arrow">
+          <ul>
+            <li>
+                <em class="icon-big"><i class="icon-addres"><img src="http://dummyimage.com/180x180" alt=""></i></em>
+                <div class="vh">收货地址</div>
+            </li>
+          </ul>
+        </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+      </div>
+      <div class="txt">不带箭头列表</div>
+      <div class="psr">
+      <div class="select-no-arrow">
+            <ul class="gap-left-right">
+              <li>
+                  不带箭头列表
+              </li>
+            </ul>
+       </div>
+
+       <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+          <div class="select-no-arrow">
+            <ul class="gap-left-right">
+              <li>
+                  不带箭头列表
+              </li>
+            </ul>
+          </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+           
+      </div>
+      
+
+        
+          <div class="txt">带箭头公用列表选择框,gap-left表示左边线条有间隙</div>
+          <div class="psr">
+          <div class="select-list-arrow ">
+            <ul class="gap-left">
+              <li>
+                <div class="vh">左边内容</div><span class="arrow-right">右边内容</span>
+              </li>
+              <li>
+                <div class="vh">左边内容</div><span class="arrow-right">右边内容</span>
+              </li>
+             
+            </ul>
+          </div>
+          <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+          <div class="select-list-arrow ">
+            <ul class="gap-left">
+              <li>
+                <div class="vh">左边内容</div><span class="arrow-right">右边内容</span>
+              </li>
+              <li>
+                <div class="vh">左边内容</div><span class="arrow-right">右边内容</span>
+              </li>
+             
+            </ul>
+          </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+          </div>
+<div class="txt">选择时间</div>
+ <div class="psr">
+        <div class="mod-form">
+          <div class="form-line">
+            <label class="form-label">更改时间</label>
+            <div class="form-element form-input-time">
+              <input id="" name="booking-time" type="date" class="input-time" value="">
+              <i class="tip-text">请选择更改时间</i>
+              <em class="ico-arrow-up"></em>
+            </div>
+          </div>
+        </div>
+        <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+          <div class="mod-form">
+          <div class="form-line">
+            <label class="form-label">更改时间</label>
+            <div class="form-element form-input-time">
+              <input id="booking-time-input" name="booking-time" type="date" class="input-time" value="test">
+              <i class="tip-text">请选择更改时间</i>
+              <em class="ico-arrow-up"></em>
+            </div>
+          </div>
+        </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+</div>
+        <div class="txt">城市列表专用选择框，arrow控制是否显示向右箭头</div>
+      <div class="psr">
+      <div class="select-list-city">
+            <ul class="gap-left">
+              <li>
+                深圳<span class="arrow"></span>
+              </li>
+              <li>
+                广州
+              </li>
+            </ul>
+        </div>
+        <div class="i-code">
+
+        <pre class="brush:xml">
+          <textarea class="textarea">
+          <div class="select-list-city">
+            <ul class="gap-left">
+              <li>
+                深圳<span class="arrow"></span>
+              </li>
+              <li>
+                广州
+              </li>
+            </ul>
+          </div>
+          </textarea>
+        </pre>
+        <div class="i-copyborder"> <span class="i-copy"> Copy HTML</span> </div>
+      </div>
+         
+     
+          </section>
+                  </div>
+
+                  </div>
+<div id="part1"  style="display:none;">
+
+          <h2 class="h-title ">常用icon名编号对应class：</h2>
+                <div class="grayline mtb20"></div>
+        <div class="icon-box">
+        <div class="txt1">1.icon-red-ok&nbsp;&nbsp;2.icon-peple-red&nbsp;&nbsp;3.icon-order&nbsp;&nbsp;4.icon-addres&nbsp;&nbsp;5.icon-voucher&nbsp;&nbsp;6.icon-gt-record&nbsp;&nbsp;7.icon-yx-record&nbsp;&nbsp;8.icon-car&nbsp;&nbsp;9.icon-search&nbsp;&nbsp;10.icon-search-close&nbsp;&nbsp;11.icon-no-coupon&nbsp;&nbsp;12.icon-no-customer&nbsp;&nbsp;13.icon-no-order&nbsp;&nbsp;<br>14.icon-no-keep&nbsp;&nbsp;15.icon-no-chart-record&nbsp;&nbsp;16.icon-no-voucher&nbsp;&nbsp;17.icon-payment-status1&nbsp;&nbsp;18.icon-payment-status2&nbsp;&nbsp;19.icon-payment-status3&nbsp;&nbsp;20.icon-payment-status4&nbsp;&nbsp;21.icon-payment-status5&nbsp;&nbsp;22.icon-phone</div>
+
+        <table class="icon-table">
+        
+            <tbody><tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              
+              <td><em class="icon-red-ok"></em></td>
+              <td><em class="icon-peple-red"></em></td>
+              <td><em class="icon-order"></em></td>
+              <td><em class="icon-addres"></em></td>
+              <td><em class="icon-voucher"></em></td>
+              <td><em class="icon-gt-record"></em></td>
+              <td><em class="icon-yx-record"></em></td>
+              <td><em class="icon-car"></em></td>
+              <td><em class="icon-search"></em></td>
+              <td><em class="icon-search-close"></em></td>
+            </tr>
+    
+            <tr>
+              <td colspan="2">11</td>
+              <td colspan="2">12</td>
+              <td colspan="2">13</td>
+               <td colspan="2">14</td>
+              <td colspan="2">15</td>
+              <td colspan="1">16</td>
+              
+            </tr>
+            <tr>
+              <td colspan="2"><em class="icon-no-coupon"></em></td>
+              <td colspan="2"><em class="icon-no-customer"></em></td>
+              <td colspan="2"><em class="icon-no-order"></em></td>
+               <td colspan="2"><em class="icon-no-keep"></em></td>
+              <td colspan="2"><em class="icon-no-chart-record"></em></td>
+              <td colspan="1"><em class="icon-no-voucher"></em></td>
+            </tr>
+            
+           <tr>
+             
+              
+            </tr>
+            
+             <tr>
+              <td colspan="2">17</td>
+              <td colspan="2">18</td>
+              <td colspan="2">19</td>
+               <td colspan="2">20</td>
+              <td colspan="2">21</td>
+              <td colspan="1">22</td>
+              
+            </tr>
+            <tr>
+             
+            </tr>
+            <tr>
+             
+               <td colspan="2"><em class="icon-payment-status1"></em></td>
+              <td colspan="2"><em class="icon-payment-status2"></em></td>
+              <td colspan="2"><em class="icon-payment-status3"></em></td>
+                <td colspan="2"><em class="icon-payment-status4"></em></td>
+              <td colspan="2"><em class="icon-payment-status5"></em></td>
+              <td colspan="1"><em class="icon-phone"></em></td>
+            </tr>
+             <tr>
+              
+            
+            </tr>
+            <tr>
+              
+            </tr>
+            <tr>
+             
+              
+            </tr>
+        </tbody></table>
+
+
+        </div>
+
+       </div>
+        
+
+
+            
+            <div id="part2" style="display:none;">
+                <h2 class="h-title mb20">项目中bug总结</h2>
+                <div class="grayline "></div>
+                <div class="bug">
+                  <dl class="dl">
+                      <dt>1、&lt;p&gt;标签不要嵌套&lt;div&gt;标签   
+                      <dd>eg:&lt;p>测试一下&lt;div&gt;块元素&lt;/div&gt;与内联元素的差别&lt;/dt&gt;<br/>当一个&lt;p&gt;标签还没结束时，遇到下一个块元素就会把自己结束掉，上面的例子中，div会自己产生一个新的行，浏览器会默认把它们处理成&lt;p&gt;标签自动结束。</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>2、另外还有有几个特殊的块级元素只能包含行内元素，不能再包含块级元素</dt>
+                      <dd>Eg：h1,h2,h3,h4,h5,h6,p,dt。</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>3、placeholder自适应：</dt>
+                      <dd>页面中使用&lt;input&gt;标签并且有属性值placeholder，在页面横屏再转回竖屏时，ios和android都会无法自适应页面。<br/>解决方案是在&lt;input&gt;外层容器中加overflow:hidden</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>4、Android2.3的overflow问题：
+</dt>
+                      <dd>在android2.3及以下系统版本的浏览器不支持overflow：scroll / auto，即在页面元素里面的内容如果超过了父元素或祖先元素的高度是无法滚动的，可以通过css3的transform来实现滚动，代表作：iscroll。</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>5、Android2.3会出现点击聚焦的情况出现黄色的边框.
+</dt>
+                      <dd>
+通过对相应的元素设置css –webkit-tap-highlight-color: rgba(0,0,0,0)解决，另外一些高版本的系统也可能会出现有黄色边框的情况，这时候试着用outline：none来解决（公用样式表中有设为全局样式）</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>6、页面同时出现fixed和input，焦点在input上时候，安卓某些版本会由于键盘的向上推移致使fixed内容盖住原有位置内容。</dt>
+                      <dd>解决方案，设置最小高度。</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>7、高度自适应问题Js框架会在html外层添加一层view的结构&lt;div id="view"&gt;&lt;/div&gt;。</dt>
+                      <dd>Css需要将#view 进行样式处理达到min-height=100%;如果body和内容背景颜色不一致会影响页面美观。</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>8、padding值计算问题  
+
+</dt>
+                      <dd>input 、textarea 有padding属性值，高版本系统会加上padding值，需要设置box-sizing:border-box;</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>9、行内元素之间html空白解决</dt>
+                      <dd>a，比如粗暴地完全删除空白;<br/>
+                      b，目前用的较多方案是在外层元素设置font-size：0，同时在内层元素上指定具体大小;<br/>c，html注释法，这种方式比较渣，但效果不错，使用HTML的注释标记顶替元素之间的空白。<br/>c，其它方式暂不推荐，有好方法后续添加。</dd>
+                  </dl>
+
+                  <dl  class="dl">
+                      <dt>10、使用display: -webkit-box;display: flex;弹性布局时，如果内联元素需要设置宽度，ios7.0以下版本需要修改为块级元素；</dt>
+                      <dd>正确方案：
+如：display: inline-block;/display:block;</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>11、使用display: -webkit-box;display: flex;弹性布局时，子元素不能只设置flex: 1;目前测试发现ios7.0以下设备没有宽度支持导致间隔和文字靠右都无法正常显示，</dt>
+                      <dd>正确的解决方案为：
+-webkit-box-flex: 1;flex: 1;</dd>
+                  </dl>
+                  <dl  class="dl">
+                      <dt>12、旋转某元素时，所有的transform属性必须有webkit前缀ios7以下某些设备不兼容；
+</dt>
+                      <dd>解决下如：
+-webkit-transform: rotate(-18deg);transform: rotate(-18deg);
+-webkit-transform-origin:top center;transform-origin:top center;</dd>
+                  </dl>
+                </div>
+                
+            </div>
+            
+            <div id="part3" style="display:none; ">
+          <h2 class="h-title mb20">各种颜色小标签</h2>
+          <em class="ico-ellipse-grey">灰色</em>
+          <em class="ico-ellipse-red">红色</em>
+          <em class="ico-ellipse-blue">蓝色</em>
+          <em class="ico-ellipse-green">绿色</em>
+        
+          <div class="grayline mtb20"></div>
+          <h2 class="h-title mb20">带圆角红色背景</h2>
+          <em class="bg-ce3b28-rad">耐磨</em>
+          <em class="bg-ce3b28-rad">运动型</em>
+          <div class="grayline mtb20"></div>
+          <h2 class="h-title mb20">半圆形</h2>
+          <em class="semicircle-top"></em>
+          <em class="semicircle-left"></em>
+          <em class="semicircle-bottom"></em>
+          <em class="semicircle-right"></em>
+        <div class="grayline mtb20"></div>
+        <h2 class="h-title mtb20">标题</h2>
+        <article class="voucher-art">
+          <h2>服务券<b class="fr">右侧文案</b></h2>
+        </article>
+        <article class="voucher-art voucher-used">
+          <h2>服务券<b class="fr">右侧文案</b></h2>
+        </article>
+
+        <div class="grayline mtb20"></div>
+                <h2 class="h-title mb20">按钮</h2>
+                <a class="btn-ce3b28 ">立即领取</a>
+                <a class="btn-ce3b28 btn-disable">立即领取</a>
+                <a class="btn-payment">去支付</a>
+                <div class="grayline mtb20"></div>
+                <h2 class="h-title mb20">输入框</h2>
+                <input type="text" class="inp-text" placeholder="券码">
+                
+
+         
+
+
+
+         <div class="grayline mtb20"></div>
+         <h2 class="h-title mtb20">使用须知</h2>
+        <div class="coupon-con2">
+          <mark><em>使用须知</em></mark>
+          <div class="p1">限26个车型使用（本田、丰田、日产、三菱、标致、雪
+          铁龙、起亚、现代、福特、凯迪拉克、荣威、菲亚特、
+          马自达、雷克萨斯、讴歌、英菲尼迪、斯巴鲁、别克、
+          MINI、宝马、奥迪、大众）。</div>
+        </div>
+
+
+                <div class="grayline mtb20"></div>
+                <h2 class="h-title mb20">时间控件</h2>
+                <div class="mod-form">
+          <div class="form-line">
+            <label class="form-label">更改时间</label>
+            <div class="form-element form-input-time">
+              <input id="booking-time-input" name="booking-time" type="date" class="input-time" >
+              <i class="tip-text">请选择更改时间</i>
+              <em class="ico-arrow-up"></em>
+            </div>
+          </div>
+        </div>
+
+   
+            </div>
+            <div id="part4" style="display:none;">
+           
+            <h2 class="h-title mb20">纯CSS3幻灯手风琴效果hover切换，默认初始收起</h2>
+           <ul class="m-demo">
+    <li><a href="#"><img src="../images/girl1.jpg" alt=""/></a></li>
+    <li><a href="#"><img src="../images/girl2.jpg" alt=""/></a></li>
+    <li><a href="#"><img src="../images/girl3.jpg" alt=""/></a></li>
+    <!-- <li><a href="#"><img src="../images/girl4.jpg" alt=""/></a></li> -->
+    <li><a href="#"><img src="../images/girl5.jpg" alt=""/></a></li>
+</ul>
+
+<div class="mtb20">对应html:</div>
+            <pre>
+&ltul class="m-demo"&gt
+    &ltli&gt&lta href="#"&gt&ltimg src="../images/girl1.jpg" alt=""/&gt&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gt&ltimg src="../images/girl2.jpg" alt=""/&gt&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gt&ltimg src="../images/girl3.jpg" alt=""/&gt&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gt&ltimg src="../images/girl4.jpg" alt=""/&gt&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gt&ltimg src="../images/girl5.jpg" alt=""/&gt&lt/a&gt&lt/li&gt
+&lt/ul&gt
+            </pre>
+            <div class="mtb20">对应css:</div>
+<pre>
+/* 纯CSS3幻灯手风琴效果hover切换 */
+.m-demo img{ max-width: inherit;}
+.m-demo{width:600px;height:266px;overflow:hidden;}
+.m-demo li{ float:left;width:120px;heihgt:100%;box-shadow:0 0 5px rgba(0,0,0,0.5);-webkit-transition:width 0.5s ease-out;-moz-transition:width 0.5s ease-out;
+-ms-transition:width 0.5s ease-out;transition:width 0.5s ease-out;}
+.m-demo:hover li:not(:hover){width:80px;}
+.m-demo li:hover{width:266px;}
+/* 初始展开  */
+.m-demo-1 li{width:50px;}
+.m-demo-1 li:first-child{width:400px;}
+</pre>
+
+
+ <h2 class="h-title mtb20">一行文字居中，超过一行文字靠左显示</h2>
+      <div class="mtb20">对应html:</div>
+            <pre>
+&ltdiv class="txt-align"&gt
+    &ltspan&gt我是一行文字&lt/span&gt
+&lt/div&gt
+            </pre>
+            <div class="mtb20">对应css:</div>
+<pre>
+.txt-align{ text-align: center;text-indent: 24px;margin-left: -24px;padding-right: 24px;line-height: 24px; }
+.txt-align span{ text-align: left; display: inline-block;}
+</pre>
+
+ <h2 class="h-title mtb20">弹窗页面未知高度时垂直居中</h2>
+            <div class="mtb20">对应html:</div>
+            <pre>
+        &ltdiv class="bg-filter"&gt&lt/div>
+        &ltarticle class="tip-filter-box"&gt
+        &ltsection class="attention-weixin-tip"&gt
+            &ltdiv class="voucher-tip"&gt
+            &ltem class="icon-red-ok"&gt&lt/em&gt
+            &ltp class="f-c-ce3b28">核销成功&lt/p&gt
+            &lt/div&gt
+         
+       &lt/section&gt
+     &lt/article&gt
+        </pre>
+<div class="mtb20">对应css:</div>
+<pre>
+
+.bg-filter{ position: fixed;min-height: 100%;    width: 100%; left: 0; top: 0; bottom: 0;background: #000; opacity: 0.4;overflow: hidden; z-index: 113;}
+.tip-filter-box{ position: fixed;left: 0;top: 0;display: box; display: -webkit-box; display: -moz-box; width:100%; height: 100%; z-index: 114; -webkit-box-pack:center; -moz-box-pack:center;
+ -webkit-box-align:center; -moz-box-align:center;} 
+.tip-filter-box{ position: fixed;left: 0;top: 0;display: box; display: -webkit-box; display: -moz-box; width:100%; height: 100%;  -webkit-box-pack:center; -moz-box-pack:center; 
+-webkit-box-align:center; -moz-box-align:center;}
+.attention-weixin-tip h2.title1 { font-size: 15px;margin-bottom: 40px;color: #000; line-height: 23px; text-align: center;}
+.attention-weixin-tip p.title2 { color: #000; font-size: 13px; line-height: 23px; text-align: center;margin-bottom: 12px;opacity: 0.4;}
+.attention-weixin-tip{border-radius: 4px; width: 84%; background: #fff; padding: 34px 0 34px 0;}
+.attention-weixin-tip .voucher-tip{font-size:1.5rem;    text-align: center;}
+
+</pre>
+              <h2 class="h-title mtb20">底部始终跟随文档底部</h2>
+                <div class="grayline"></div>
+                <div class="mtb20">html内容:</div>
+<pre>
+&ltdiv class="g-doc"&gt
+  &ltdiv class="g-bd"&gt
+    &ltp&gt底部始终在文档末尾，当文档较长时跟随在文档末尾，当文档较短时在窗口底部。&lt/p&gt
+  &lt/div&gt
+&lt/div&gt
+</pre>
+                <div class="mtb20">对应css:</div>
+<pre>
+html,body{width:100%;height:100%;margin:0;}
+.g-doc{position:relative;min-height:100%;-height:100%;}
+.g-bd{padding:0 0 60px;zoom:1;}
+.g-ft{height:50px;margin:-50px 0 0;background:#ddd;}
+</pre>
+
+              <div>
+
+              </div>
+              <h2 class="h-title mtb20">文本自适应换行，且不会把右边的时间挤掉</h2>
+                <div class="grayline mtb20"></div>
+                <div class="mtb20">html内容:</div>
+<pre>
+&ltdiv class="m-demo fn-clear"&gt
+    &ltdiv class="cnt">这是一段长度未知的文本，自动换行，且不会把右边的时间挤掉，修改这段文字宽度试试。&lt/div&gt
+    &ltdiv class="date">2009-08-08&lt/div&gt
+&lt/div&gt
+</pre>
+<div class="mtb20">对应css:</div>
+<pre>
+.m-demo{padding:5px 0;border-bottom:1px dotted #ddd;font-size:12px;}
+.m-demo .cnt{float:left;margin-right:80px;}
+.m-demo .date{display:inline;float:left;margin-left:-70px;}
+</pre>
+
+            </div>
+            <div id="part5" style="display:none;">
+            	<h2 class="h-title mb20">CSS3 animate动画</h2>
+                <div class="grayline"></div>
+            	<ul class="i-ullist2 cl" id="list">
+                <li><a href="../animate/001.html">
+                  <p><img src="../images/a1.jpg"></p>
+                  <span>淡入效果</span></a></li>
+                <li><a href="../animate/002.html">
+                  <p><img src="../images/a2.jpg"></p>
+                  <span>从下淡入效果</span></a></li>
+                <li><a href="../animate/003.html">
+                  <p><img src="../images/a3.jpg"></p>
+                  <span>从上淡入效果</span></a></li>
+                <li><a href="../animate/004.html">
+                  <p><img src="../images/a4.jpg"></p>
+                  <span>从左淡入效果</span></a></li>
+                <li><a href="../animate/005.html">
+                  <p><img src="../images/a5.jpg"></p>
+                  <span>从右淡入效果</span></a></li>
+                <li><a href="../animate/006.html">
+                  <p><img src="../images/a6.jpg"></p>
+                  <span>淡出效果</span></a></li>
+                <li><a href="../animate/007.html">
+                  <p><img src="../images/a7.jpg"></p>
+                  <span>向下淡出效果</span></a></li>
+                <li><a href="../animate/008.html">
+                  <p><img src="../images/a8.jpg"></p>
+                  <span>向上淡出效果</span></a></li>
+                <li><a href="../animate/009.html">
+                  <p><img src="../images/a9.jpg"></p>
+                  <span>向左淡出效果</span></a></li>
+                <li><a href="../animate/010.html">
+                  <p><img src="../images/a10.jpg"></p>
+                  <span>向右淡出效果</span></a></li>
+                <li><a href="../animate/011.html">
+                  <p><img src="../images/a11.jpg"></p>
+                  <span>弹入效果</span></a></li>
+                <li><a href="../animate/012.html">
+                  <p><img src="../images/a12.jpg"></p>
+                  <span>从下弹入效果</span></a></li>
+                <li><a href="../animate/013.html">
+                  <p><img src="../images/a13.jpg"></p>
+                  <span>从上弹入效果</span></a></li>
+                <li><a href="../animate/014.html">
+                  <p><img src="../images/a14.jpg"></p>
+                  <span>从左弹入效果</span></a></li>
+                <li><a href="../animate/015.html">
+                  <p><img src="../images/a15.jpg"></p>
+                  <span>从右弹入效果</span></a></li>
+                <li><a href="../animate/016.html">
+                  <p><img src="../images/a16.jpg"></p>
+                  <span>弹出效果</span></a></li>
+                <li><a href="../animate/017.html">
+                  <p><img src="../images/a17.jpg"></p>
+                  <span>从上弹出效果</span></a></li>
+                <li><a href="../animate/018.html">
+                  <p><img src="../images/a18.jpg"></p>
+                  <span>从下弹出效果</span></a></li>
+                <li><a href="../animate/019.html">
+                  <p><img src="../images/a19.jpg"></p>
+                  <span>从左弹出效果</span></a></li>
+                <li><a href="../animate/020.html">
+                  <p><img src="../images/a20.jpg"></p>
+                  <span>从右弹出效果</span></a></li>
+                <li><a href="../animate/021.html">
+                  <p><img src="../images/a21.jpg"></p>
+                  <span>转入效果</span></a></li>
+                <li><a href="../animate/022.html">
+                  <p><img src="../images/a22.jpg"></p>
+                  <span>从左下方转入效果</span></a></li>
+                <li><a href="../animate/023.html">
+                  <p><img src="../images/a23.jpg"></p>
+                  <span>从左上方转入效果</span></a></li>
+                <li><a href="../animate/024.html">
+                  <p><img src="../images/a24.jpg"></p>
+                  <span>从右下方转入效果</span></a></li>
+                <li><a href="../animate/025.html">
+                  <p><img src="../images/a25.jpg"></p>
+                  <span>从右上方转入效果</span></a></li>
+                <li><a href="../animate/026.html">
+                  <p><img src="../images/a26.jpg"></p>
+                  <span>转出效果</span></a></li>
+                <li><a href="../animate/027.html">
+                  <p><img src="../images/a27.jpg"></p>
+                  <span>从左上方转出效果</span></a></li>
+                <li><a href="../animate/028.html">
+                  <p><img src="../images/a28.jpg"></p>
+                  <span>从左下方转出效果</span></a></li>
+                <li><a href="../animate/029.html">
+                  <p><img src="../images/a29.jpg"></p>
+                  <span>从右上方转出效果</span></a></li>
+                <li><a href="../animate/030.html">
+                  <p><img src="../images/a30.jpg"></p>
+                  <span>从右下方转出效果</span></a></li>
+                <li><a href="../animate/031.html">
+                  <p><img src="../images/a31.jpg"></p>
+                  <span>翻转效果</span></a></li>
+                <li><a href="../animate/032.html">
+                  <p><img src="../images/a32.jpg"></p>
+                  <span>沿横轴翻入效果</span></a></li>
+                <li><a href="../animate/033.html">
+                  <p><img src="../images/a33.jpg"></p>
+                  <span>沿横轴翻出效果</span></a></li>
+                <li><a href="../animate/034.html">
+                  <p><img src="../images/a34.jpg"></p>
+                  <span>沿纵轴翻入效果</span></a></li>
+                <li><a href="../animate/035.html">
+                  <p><img src="../images/a35.jpg"></p>
+                  <span>沿纵轴翻出效果</span></a></li>
+                <li><a href="../animate/036.html">
+                  <p><img src="../images/a36.jpg"></p>
+                  <span>闪烁效果</span></a></li>
+                <li><a href="../animate/037.html">
+                  <p><img src="../images/a37.jpg"></p>
+                  <span>弹跳效果</span></a></li>
+                <li><a href="../animate/038.html">
+                  <p><img src="../images/a38.jpg"></p>
+                  <span>震颤效果</span></a></li>
+                <li><a href="../animate/039.html">
+                  <p><img src="../images/a39.jpg"></p>
+                  <span>摇摆效果</span></a></li>
+                <li><a href="../animate/040.html">
+                  <p><img src="../images/a40.jpg"></p>
+                  <span>摇晃效果</span></a></li>
+                <li><a href="../animate/041.html">
+                  <p><img src="../images/a41.jpg"></p>
+                  <span>震铃效果</span></a></li>
+                 <li><a href="../animate/043.html">
+                  <p><img src="../images/ani.gif" ></p>
+                  <span>动画例子1</span></a></li>
+                   <li><a href="../animate/042.html">
+                  <p><img src="../images/ani.gif" ></p>
+                  <span>动画例子2</span></a></li>
+                 
+          
+              </ul>
+            </div>
+            <div id="part6" style="display:none;">
+            <div class="layout0">
+            <h2 class="h-title mb20">tab切换</h2>
+        <div style="width:640px;" class="mtb20">
+      <ul class="tab-service-detail">
+              <li class="on"><a>全部订单</a></li>
+              <li class=""><a>待付款</a></li>
+              <li class=""><a>待收货</a></li>
+              <li class=""><a>已完成</a></li>
+        </ul>
+        <section  style="display:;">
+            全部订单
+        </section>
+        <section style="display:none;">
+            待付款
+        </section>
+        <section style="display:none;">
+            待收货
+        </section>
+        <section style="display:none;">
+            已完成
+        </section>
+    </div>
+    </div>
+            <div class="layout1"  style="display:none;">
+             <h2 class="h-title mb20">图片轮播</h2>
+                <div class="grayline"></div>
+                  <div class="swiper-container swiper-container-horizontal" style="width:640px; margin:10px 0;">
+                    <div class="swiper-wrapper">
+                                       <figure class="swiper-slide ">
+                            <a href="javascript:;">
+                                <img height="540" src="../images/girl1.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="swiper-slide swiper-slide-active">
+                            <a href="">
+                                <img height="540" src="../images/girl2.jpg" alt="">
+                            </a>
+                        </figure>
+                       <!--  <figure class="swiper-slide swiper-slide-active">
+                            <a href="">
+                                <img height="540" src="../images/girl3.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="swiper-slide swiper-slide-active">
+                            <a href="">
+                                <img height="540" src="../images/girl4.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="swiper-slide swiper-slide-active">
+                            <a href="">
+                                <img height="540" src="../images/girl5.jpg" alt="">
+                            </a>
+                        </figure> -->
+                    </div>
+                    <div class="swiper-pagecount swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+            </div>
+            
+            </div>
+
+            <div id="part7"  style="display:none; ">
+                <div class="layout0">
+          <h2 class="h-title mb20">头部结构</h2>
+          <div class="grayline"></div>
+          <div style="width:640px;" class="mtb20">
+            <article class="my-info-box">
+              <p class="txt1">企业号</p>
+              <section class="my-info">
+                <div class="info-img"><img src="http://dummyimage.com/320x320" alt="" class="imgauto"></div>
+                <div class="info-item">
+                  <p class="my-name">友间车坊</p>
+                  <p class="my-mun">粉丝：878</p>
+                </div>
+              </section>
+            </article>
+            <p class="mtb20"></p>
+            <article class="my-info-box">
+              <section class="my-info">
+                  友间车坊
+              </section>
+            </article>
+            <p class="mtb20"></p>
+            <article class="my-info-chart">
+              <ul class="char-details-art">
+                  <li class="char-details">
+                            <span class="char-img"><img src="http://dummyimage.com/80x80" alt=""></span>
+                            <div class="char-con">
+                              微信昵称
+                              <div class="message">13366655588</div>
+                            </div>
+                           <a href="tel:4006900788" class="char-right">
+                               <em class="icon-phone"></em>
+                           </a>
+                  </li>
+                  <li class="chart-record">
+                    <em>距离下次保养：</em> 365天<em><i class="line">|</i>距离下次续保：</em>1天 
+                  </li>
+              </ul>
+            </article>
+            <p class="mtb20"></p>
+            <section class="mod-info bg-eee">
+        <div class="info-img">
+          <img src="http://dummyimage.com/120x120" alt="" class="imgauto">
+          <p class="info-name">微信名称</p>
+        </div>
+      </section>
+           <p class="txt1">公众号</p>
+          <section class="my-info">
+              <div class="info-img"><img src="http://dummyimage.com/80x80" alt="" class="imgauto"></div>
+              <div class="info-item">
+                <p class="my-name">李太白</p>
+                <p>1234567890</p>
+              </div>
+          </section>
+      </div>
+    </div>
+                    <div class="layout1" style="display:none; ">
+                    <h2 class="h-title mb20">尾部结构</h2>
+          <div class="grayline"></div>
+                    <div style="width:640px;">
+                        <section class="btn-bottom">
+        <div class="btn-fix">
+            <a href="javascript:void(0);" class="btn ">保存</a>
+        </div>
+      </section>
+  
+      <section class="btn-bottom">
+          <div class="btn-fix-tab">
+            <div class="price-left">
+              请在以下时间内支付：<br>
+              <p class="f-c-ce3b28">1天15时25分16秒</p>
+            </div>
+            <a href="javascript:void(0);" class="btn">去支付</a>
+          </div>
+      </section>
+                    </div>
+                    </div>
+            </div>
+            <div id="part8"  style="display:none; ">
+          <h2 class="h-title mb20">css3 media</h2>
+          <div class="grayline"></div>
+
+  <!--        
+@media only screen and (min-width: 321px) and 
+(max-width: 375px)  {
+html{ font-size: 37.5px; }
+}
+@media only screen and (min-width: 376px) and 
+(max-width: 414px)  {
+html{ font-size: 41.4px; }
+}
+@media only screen and (min-width:415px) and 
+(max-width: 435px)  {
+html{ font-size: 43.5px; }
+}
+ -->
+            <div id="highlighter-690745" class="syntaxhighlighter  css">
+            <table border="0" cellpadding="0" cellspacing="0"><tbody>
+              <tr>
+                <td class="gutter">
+                  <div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div>
+                </td>
+                <td class="code">
+                  <div class="container">
+                  <div class="line number1 index0 alt2"><code class="css comments">/* media */</code></div>
+                  <div class="line number2 index1 alt1"><code class="css comments">/* iphone4s */</code></div>
+                  <div class="line number3 index2 alt2"><code class="css plain">@media only </code><code class="css value">screen</code> <code class="css plain">and (max-width: </code><code class="css value">320px</code><code class="css plain">){</code></div>
+                  <div class="line number4 index3 alt1"><code class="css plain">}</code></div>
+
+
+                  <div class="line number2 index1 alt1"><code class="css comments">/* 横屏 */</code></div>
+                  <div class="line number3 index2 alt2"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (orientation:</code><code class="css value">landscape</code><code class="css plain">){</code></div>
+                  <div class="line number4 index3 alt1"><code class="css plain">}</code></div>
+                  <div class="line number5 index4 alt2"><code class="css comments">/* 竖屏 */</code></div>
+                  <div class="line number6 index5 alt1"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (orientation:</code><code class="css value">portrait</code><code class="css plain">){</code></div><div class="line number7 index6 alt2"><code class="css plain">}</code></div><div class="line number8 index7 alt1"><code class="css comments">/* 窗口宽度&lt;960,设计宽度=768 */</code></div><div class="line number9 index8 alt2"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (</code><code class="css keyword">max-width</code><code class="css plain">:</code><code class="css value">959px</code><code class="css plain">){</code></div><div class="line number10 index9 alt1"><code class="css plain">}</code></div><div class="line number11 index10 alt2"><code class="css comments">/* 窗口宽度&lt;768,设计宽度=640 */</code></div><div class="line number12 index11 alt1"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (</code><code class="css keyword">max-width</code><code class="css plain">:</code><code class="css value">767px</code><code class="css plain">){</code></div><div class="line number13 index12 alt2"><code class="css plain">}</code></div><div class="line number14 index13 alt1"><code class="css comments">/* 窗口宽度&lt;640,设计宽度=480 */</code></div><div class="line number15 index14 alt2"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (</code><code class="css keyword">max-width</code><code class="css plain">:</code><code class="css value">639px</code><code class="css plain">){</code></div><div class="line number16 index15 alt1"><code class="css plain">}</code></div><div class="line number17 index16 alt2"><code class="css comments">/* 窗口宽度&lt;480,设计宽度=320 */</code></div><div class="line number18 index17 alt1"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (</code><code class="css keyword">max-width</code><code class="css plain">:</code><code class="css value">479px</code><code class="css plain">){</code></div><div class="line number19 index18 alt2"><code class="css plain">}</code></div><div class="line number20 index19 alt1"><code class="css comments">/* windows UI 贴靠 */</code></div><div class="line number21 index20 alt2"><code class="css plain">@media </code><code class="css value">screen</code> <code class="css plain">and (-ms-view-state:snapped){</code></div><div class="line number22 index21 alt1"><code class="css plain">}</code></div><div class="line number23 index22 alt2"><code class="css comments">/* 打印 */</code></div><div class="line number24 index23 alt1"><code class="css plain">@media </code><code class="css value">print</code><code class="css plain">{</code></div><div class="line number25 index24 alt2"><code class="css plain">}</code></div></div>
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="i-popup" style="display:none;"><img src="../images/ok.png" width="40" height="52"><span>已复制好，快去粘贴吧！</span></div>  
+
+
+</section>
+<!-- 内容结束 -->
+</body>
+</html>
+
+
+
+<script type="text/javascript" src="../js/lib/sea.js?v=20160727"></script>
+<script type="text/javascript" src="../js/lib/seaconfig.js?v=20160727"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+seajs.use(['toggleTab','header'])
+seajs.use('../js/swiper.min.js')
+/*]]>*/
+</script>

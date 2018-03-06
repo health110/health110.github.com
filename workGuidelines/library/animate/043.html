@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前端开发 ui demo</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/function.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<link href="../css/core.css" rel="stylesheet" type="text/css">
+<link href="../css/animation.css" rel="stylesheet" type="text/css">
+
+<script src="../js/html5.js"></script>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/swiper.min.js"></script><script src="../js/jquery-1.8.3.min.js"></script>
+
+
+<style type="text/css">
+#dowebok{width:280px;height:100px;border-radius:5px;background:#51acdd;color:#fff;text-align:center;line-height:100px}
+</style>
+</head>
+
+<body>
+<!-- 导航开始 -->
+<nav class="g-nv f-usn">
+  <div class="g-wapper">
+    <div class="g-m1">
+    <a href="javascript:;" class="icon-return" id="i-return"><img src="../images/icon-return.png" width="30" height="30"></a>
+     <ul class="navlist">
+      <li class="first"><a href="../standard.html">规范</a></li>
+      <li><a href="../workguidelines.html">重构工作指引</a></li>
+      <li class="first"><a href="../library.html">代码库</a><i></i></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- 导航结束 --> 
+
+<!-- 内容开始 -->
+<section>
+  <div class="g-m">
+    <div class="g-in">
+      <div class="run"></div>
+      <h3 class="h-title1 mtb20">html代码为：</h3>
+      <div class="i-code">
+      <pre class="brush:xml"><textarea id="Text" style="height:20px;">
+<div class="run"></div>
+      </textarea>
+</pre>
+      <div class="i-copyborder"> <span class="i-copy"> Copy</span> </div>
+    </div>
+    <h3 class="h-title1 mtb20">css代码为：</h3>
+    <div class="i-code">
+      <pre class="brush:xml"><textarea style="height: 600px;">
+      .run{ background: url(../images/run.png) 0 0 no-repeat; width:312px; height:360px;-webkit-transform: scale(0.65);-webkit-transform: scale(0.5);
+      -webkit-animation-name: run;/* 动画名称 */
+            -webkit-animation-iteration-count: infinite;/* 动画无限播放 */
+            -webkit-animation-timing-function: step-start;/* 马上跳到动画每一结束桢的状态 */
+            -webkit-animation-duration: 650ms;/* 动画运行的时间 */
+      }
+       @-webkit-keyframes run{
+
+            0%{  background-position: 0 0; }
+            4.2%{  background-position: -309px 0; }
+            8.4%{  background-position: -618px 0; }
+            12.6%{  background-position: -927px 0; }
+            16.8%{ background-position: -1236px 0;  }
+            21%{ background-position: -1545px 0;  }
+            25.2%{ background-position: -1854px 0;  }
+            29.4%{ background-position: -2163px 0;  }
+            33.6%{  background-position: -2472px 0; }
+            37.8%{  background-position: -2781px 0;  }
+            42%{ background-position: -3090px 0;   }
+            46.2%{  background-position: -3399px 0;  }
+            50.4%{  background-position: -3708px 0;  }
+            54.6%{  background-position: -4017px 0;  }
+            58.8%{  background-position: -4326px 0;  }
+            63%{  background-position: -4635px 0;  }
+            67.2%{  background-position: -4944px 0;  }
+            71.4%{  background-position: -5253px 0;  }
+            75.6%{  background-position: -5562px 0;  }
+            79.8%{  background-position: -5871px 0;  }
+            84%{  background-position: -6180px 0;  }
+            88.2%{  background-position: -6489px 0;  }
+            92.4%{  background-position: -6798px 0;  }
+            96.6%{  background-position: -7107px 0;  }
+            100%{  background-position: 0 0;}
+        }
+</textarea>
+</pre>
+      <div class="i-copyborder"> <span class="i-copy"> Copy</span> </div>
+    </div>
+  </div>
+  </div>
+  <div class="i-popup" style="display:none;"><img src="../images/ok.png" width="40" height="52"><span>已复制好，快去粘贴吧！</span></div>
+</section>
+<!-- 内容结束 -->
+</body>
+</html>
+<script type="text/javascript" src="../js/lib/sea.js?v=20160727"></script>
+<script type="text/javascript" src="../js/lib/seaconfig.js?v=20160727"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+seajs.use(['toggleTab','header'])
+/*]]>*/
+</script>
