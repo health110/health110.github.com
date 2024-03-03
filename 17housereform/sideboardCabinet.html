@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  <meta name="description" content="装修整改">
+  <link rel="icon" href="data:image/ico;base64,aWNv">
+</head>
+<script>
+  !function(window){
+    // 基准大小
+    const baseSize = 10
+    // 设置 rem 函数
+    function setRem () {
+      // 当前页面宽度相对于 1920宽的缩放比例，可根据自己需要修改。
+      const scale = document.documentElement.clientWidth
+      // 设置页面根节点字体大小（“Math.min(scale, 2)” 指最高放大比例为2，可根据实际业务需求调整）
+      document.documentElement.style.fontSize = scale / baseSize + 'px'
+    }
+    // 初始化
+    setRem()
+    // 改变窗口大小时重新设置 rem
+    window.onresize = function () {
+      setRem()
+    }
+  }(window);
+</script>
+<style>
+  @import "./style/css/index.css";
+</style>
+<style>
+  /* 14px 0.338rem; */
+  /* 15px 0.362rem; */
+  /* 16px 0.386rem; */
+  /* 17px 0.41rem; */
+  /* 18px 0.434rem; */
+  /* 20px 0.48rem; */
+  body {
+    font-size: 0.338rem;
+  }
+  .title-h1 {
+    background: #fdd961;
+    color: #e01c06;
+    font-size: 0.386rem;
+    line-height: 0.41rem;
+    padding: 0.434rem 0.48rem;
+    font-weight: 600;
+  }
+</style>
+<body>
+  <div id="app">
+    <h1 class="title-h1">餐边柜</h1>
+    <img src="./style/image/sideboard-cabinet/1.jpg">
+    <img src="./style/image/sideboard-cabinet/2.jpg">
+    <img src="./style/image/sideboard-cabinet/3.jpg">
+    <img src="./style/image/sideboard-cabinet/4.jpg">
+  </div>
+</body>
+
+</html>
