@@ -1,0 +1,263 @@
+html {
+  height: 100%; // font-size: 50px;
+}
+
+
+
+.pre-space pre {
+  white-space: pre-wrap !important;
+  font-family: PingFang-SC-Regular, Helvetica Neue, Helvetica, microsoft yahei, sans-serif;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+abbr,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+meter,
+nav,
+output,
+progress,
+section,
+summary,
+time,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+input,
+sbutton,
+select,
+textarea {
+  font-family: microsoft yahei, sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 1;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #eee;
+  margin: auto;
+  max-width: 750px;
+}
+
+body,
+#view {
+  height: 100%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+th,
+figcaption,
+b,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+
+fieldset,
+iframe {
+  border: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style: none outside;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure,
+figcaption,
+details,
+summary {
+  display: block;
+}
+
+img,
+a img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+/* 去掉点击后Android边框和IOS的默认背景 */
+
+a,
+button,
+input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+input {
+  outline: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+.fs0 {
+  font-size: 0;
+}
+
+
+
+
+
+
+
+
+
+/*margin and padding*/
+
+.mt10 {
+  margin-top: 10/@w;
+}
+
+.mt-10 {
+  margin-top: -20/@w2;
+}
+
+.mb10 {
+  margin-bottom: 10/@w;
+}
+
+.mb20 {
+  margin-bottom: 20/@w;
+}
+
+.mt28 {
+  margin-top: 12/@w;
+}
+
+.mtb10 {
+  margin-top: 10/@w;
+  margin-bottom: 10/@w;
+}
+
+
+
+
+
+
+
+
+
+/*width*/
+
+.w70 {
+  width: 70/@w;
+}
+
+
+
+
+
+
+
+
+
+/*height*/
+
+.h48 {
+  height: 48/@w;
+  line-height: 48/@w;
+}
+
+.fs26 {
+  font-size: 13/@w;
+}
+
+.fs30 {
+  font-size: 15/@w;
+}
+
+
+
+
